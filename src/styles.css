@@ -1,0 +1,23 @@
+body {
+  background: linear-gradient(
+    123deg,
+    rgb(250, 217, 197) 0%,
+    rgb(136, 183, 244) 100%
+  );
+  background-attachment: fixed;
+}
+
+div {
+  border-radius: 20px;
+  padding: 10px 40px 40px 40px;
+}
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  background: rgba(255, 246, 239, 0.6);
+}
+
+li {
+  list-style: none;
+}
