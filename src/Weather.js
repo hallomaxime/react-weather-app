@@ -38,18 +38,24 @@ export default function Weather(props) {
             </div>
           </div>
         </form>
-        <h2>{weatherData.city}</h2>
+        <h1>{weatherData.city}</h1>
         <ul>
           <li>{weatherData.date}</li>
           <li className="text-capitalize">{weatherData.description}</li>
         </ul>
-        <div className="row">
+        <div className="row mt-3">
           <div className="col-6">
-            <img src={weatherData.icon} alt="description" />
-            <span className="temperature">
-              {Math.round(weatherData.temperature)}
-            </span>
-            <span>°C</span>
+            <div className="d-flex">
+              <div>
+                <img src={weatherData.icon} alt="description" />
+              </div>
+              <div>
+                <span className="temperature">
+                  {Math.round(weatherData.temperature)}
+                </span>
+                <span>°C</span>
+              </div>
+            </div>
           </div>
           <div className="col-6">
             <ul>
@@ -62,8 +68,7 @@ export default function Weather(props) {
     );
   } else {
     const apiKey = "dbaa90bd0tdaf4424ef37230ff2fcfo8";
-    let city = "London";
-    let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}`;
+    let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${props.defaultCity}&key=${apiKey}`;
     axios.get(apiUrl).then(handleResponse);
 
     return "Loading…";
