@@ -1,0 +1,22 @@
+.Weather {
+  color: #272044;
+}
+
+.Weather input {
+  width: 100%;
+}
+
+.Weather h2 {
+  margin: 20px;
+}
+
+.Weather li,
+.Weather span {
+  opacity: 0.8;
+}
+
+.Weather .temperature {
+  font-size: 32px;
+  vertical-align: middle;
+  opacity: 1;
+}

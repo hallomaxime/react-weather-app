@@ -1,5 +1,5 @@
 import React from "react";
-import SearchEngine from "./SearchEngine";
+import Weather from "./Weather";
 import Footer from "./Footer";
 import "./styles.css";
 
@@ -8,7 +8,7 @@ export default function App() {
     <div>
       <div className="App">
         <h1>Weather App</h1>
-        <SearchEngine />
+        <Weather />
       </div>
       <div>
         <Footer />
