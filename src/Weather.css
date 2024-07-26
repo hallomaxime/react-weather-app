@@ -16,7 +16,13 @@
 }
 
 .Weather .temperature {
-  font-size: 32px;
+  font-size: 64px;
   vertical-align: middle;
   opacity: 1;
+}
+
+.Weather .unit {
+  position: relative;
+  line-height: 1;
+  top: -14px;
 }
