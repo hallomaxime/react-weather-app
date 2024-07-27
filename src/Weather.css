@@ -8,12 +8,19 @@
 
 .Weather h1 {
   font-size: 56px;
-  margin: 20px;
 }
 
-.Weather li,
-.Weather span {
-  opacity: 0.8;
+.current-weather {
+  font-size: 20px;
+}
+
+.Weather ul {
+  margin: 0;
+  padding: 0;
+}
+
+.Weather li {
+  opacity: 0.7;
 }
 
 .Weather .temperature {
