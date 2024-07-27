@@ -7,7 +7,7 @@ export default function Footer() {
       <a
         href="https://www.github.com/hallomaxime"
         target="_blank"
-        rel="noreferrer"
+        rel="noopener noreferrer"
       >
         Github
       </a>{" "}
@@ -15,7 +15,7 @@ export default function Footer() {
       <a
         href="https://graceful-douhua-be3de5.netlify.app"
         target="_blank"
-        rel="noreferrer"
+        rel="noopener noreferrer"
       >
         Netlify
       </a>
